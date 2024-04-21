@@ -8,8 +8,8 @@
     margin: 0 0 20px 0;
 }
 .mediaLinks li {
-    display: inline-block;
-    margin: 0 10px;
+    /* display: inline-block; */
+    margin: 20px 0 20px 0;
     cursor: pointer;
 }
 .mediaLinks li:hover {
@@ -99,11 +99,3 @@
         text-align: left;
     }
 }
-
-/* .footerLast {
-    background-color: #4F6F52;
-    color: #333;
-    border-radius: 5px;
-    padding: 8px 10px;
-    font-weight: bold;
-} */

@@ -1,5 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -10,5 +10,8 @@ import { RouterModule } from '@angular/router';
   imports: [NgOptimizedImage, RouterModule],
 })
 export class HeaderComponent {
-
+  @ViewChild('navbarSupportedContent') navbarCollapse!: ElementRef;
+  collapseNavbar() {
+    this.navbarCollapse.nativeElement.classList.remove('show');
+  }
 }
