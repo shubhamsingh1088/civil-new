@@ -77,7 +77,70 @@
     color: #163020;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-item p {
+    padding: 10px;
+    font-size: 1.1em;
+    background: #fff;
+    margin: 0;
+}
+
+.image-item:hover {
+    transform: translateY(-10px);
+}
+
+.ourOffice {
+    display: none;
+}
+.officeHeading {
+    display: none;
+}
+.office {
+    display: none;
+}
+
 @media screen and (max-width: 480px) {
+    .ourOffice {
+        display: block;
+        width: 100%;
+        margin: auto;
+        border-radius: 5px;
+        background: rgb(170,197,39);
+        background: radial-gradient(circle, rgba(170,197,39,1) 0%, rgba(249,252,249,1) 100%);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .officeHeading {
+        display: block;
+        text-align: center;
+        margin: 20px 0 0 0;
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    .office {
+        display: block;
+    }
     .d-flex {
         flex-direction: column;
     }

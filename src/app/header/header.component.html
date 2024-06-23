@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" (click)="collapseNavbar()" [routerLink]="['/home']">
-            <img ngSrc="./assets/logo.png" class="logo" style="width: 84px; height: 69px;" priority fill>
+            <img ngSrc="./assets/logo.png" class="logo" style="width: 70px; height: 55px; background-color: transparent;" priority fill>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -16,16 +16,21 @@
                     <a class="nav-link fw-semibold" (click)="collapseNavbar()" [routerLink]="['/blog']">BLOG</a>
                 </li> -->
                 <li class="nav-item dropdown">
+                    <a class="nav-link fw-semibold" (click)="collapseNavbar()" [routerLink]="['/home']">
+                        HOME
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link fw-semibold dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         SERVICES
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" (click)="collapseNavbar()" [routerLink]="['/services/civil-construction']">Civil Construction</a></li>
+                        <li><a class="dropdown-item" (click)="collapseNavbar()">Civil Construction</a></li>
                         <li><a class="dropdown-item" (click)="collapseNavbar()" [routerLink]="['/services/interior-designing']">Interior Designing</a></li>
                         <li><a class="dropdown-item" (click)="collapseNavbar()" [routerLink]="['/services/architecture']">Architecture</a></li>
-                        <li><a class="dropdown-item" (click)="collapseNavbar()" [routerLink]="['/services/water-proofing']">Water Proofing</a></li>
-                        <li><a class="dropdown-item" (click)="collapseNavbar()" [routerLink]="['/services/cost-estimation']">Cost Estimation</a></li>
-                        <li><a class="dropdown-item" (click)="collapseNavbar()" [routerLink]="['/services/consultancy']">Consultancy</a></li>
+                        <li><a class="dropdown-item" (click)="collapseNavbar()">Water Proofing</a></li>
+                        <li><a class="dropdown-item" (click)="collapseNavbar()">Cost Estimation</a></li>
+                        <li><a class="dropdown-item" (click)="collapseNavbar()">Consultancy</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -37,10 +42,10 @@
                     <a class="nav-link fw-semibold" (click)="collapseNavbar()" [routerLink]="['/contact']">CONTACT</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search" style="margin: 8px;">
+            <!-- <form class="d-flex" role="search" style="margin: 8px;">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </div>
 </nav>
